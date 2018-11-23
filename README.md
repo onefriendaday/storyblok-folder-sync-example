@@ -9,7 +9,7 @@ $ cd storyblok-folder-sync-example
 $ npm install
 ~~~
 
-2. INSERT your oauth token from the my account section and the source and target for the sync process
+2. Edit the file index.js and INSERT your oauth token from the my account section and the source and target for the sync process
 
 ~~~
 // Insert your oauth token and folder id
