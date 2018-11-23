@@ -1,7 +1,7 @@
 # Instructions
 
 
-1. Download and install Storyblok's SDK
+1. Clone this respository and install Storyblok's SDK
 
 ~~~
 $ git clone https://github.com/onefriendaday/storyblok-folder-sync-example.git
