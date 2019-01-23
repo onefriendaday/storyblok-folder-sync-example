@@ -41,9 +41,12 @@ async function getAllStories(){
   for (var i = 0; i < all.length; i++) {
     console.log(all[i].name)
     try {
-      all[i].parent_id = targetFolderId
+      let resSingle = await Storyblok.get('spaces/' + spaceId + '/stories/' + all[i].id)
+      let story = resSingle.data.story
+      story.parent_id = targetFolderId
+
       let res = await Storyblok.post('spaces/' + targetSpaceId + '/stories', {
-        story: all[i]
+        story: story
       })
     } catch(e) {
       console.log(e.response.data)
